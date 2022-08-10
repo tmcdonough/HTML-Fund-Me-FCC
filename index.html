@@ -1,0 +1,28 @@
+<!-- can type "!" and then click on it and it will autopopulate in VSCode -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Fund Me App</title>
+</head>
+<body>
+    Fund Me App
+    
+    <!-- Could place the javascript inside script tag, or can import with the src="location" type="text/javascript" -->
+    <!-- <script src="./index.js" type="text/javascript"> this is what we would use if we didnt have any imports. since we do have imports, need to do type module--> 
+    <script src="./index.js" type="module"></script>
+    </script>
+    <button id="connectButton">Connect</button>
+    <button id="balanceButton">getBalance</button>
+    <button id="withdrawButton">withdraw</button>
+    <!-- form for how much eth to input-->
+    <label for="fund">ETH Amount</label>
+    <input id="ethAmount" placeholder="0.1"/>
+    <button id="fundButton">Fund</button>
+<!--     buttons are now defined in index.js. when u do module u cant do it in the html like below
+    <button id="connectButton" onclick="connect()">
+        Connect
+    </button>
+    <button id="fund" onclick="fund()"> Fund </button> -->
+</body>
+</html>
